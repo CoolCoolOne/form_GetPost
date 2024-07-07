@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: bisque;
+    background-color: black;
+}
+
+form{
+    width: 300px;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 0px 90px rgb(6, 58, 55);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+.inp_itself,.but_itself{
+    background-color: rgb(6, 58, 55);
+    width: 200px;
+    height: 20px;
+    color: bisque;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.but_itself{
+    width: 100px;
+    border-radius: 0px;
+}
+
+.lbl_itself{
+    display: block;
+}
+
+.inp, .but{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}

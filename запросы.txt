@@ -1,0 +1,28 @@
+http://audiobooks.loft:8888/completeBooks/index.php
+http://02get_post.loft:8888/index.php
+
+чтобы организовать новый сайт в xampp надо:
+1. Добавить его в httpd vhosts. conf (apache honf extra)
+<VirtualHost *:8888>
+    ServerAdmin webmaster@audiobooks
+    DocumentRoot "C:/BACKEND/XAMPP/htdocs/audiobooks"
+    ServerName audiobooks.loft
+    ServerAlias www.audiobooks.loft
+</VirtualHost>
+<Directory "C:/BACKEND/XAMPP/htdocs/audiobooks">
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride all
+        Order Deny,Allow
+        Allow from all
+        Require all granted
+</Directory>
+
+2. прописать в hosts в system32/drivers/eth/hosts
+127.0.0.1 audiobooks.loft
+127.0.0.1 www.audiobooks.loft
+
+3. положить проект с ОДНОИМЁННОЙ папкой в htdocs
+
+4. порт 8888 (или другой) прописаны в httpd.conf
+
+5. перезапустить панель xampp и apache в ней!
